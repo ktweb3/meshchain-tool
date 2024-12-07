@@ -1,0 +1,18 @@
+[[accounts]]
+access_token = 'YOU_ACCESS_TOKEN'
+email = 'email1.com'
+refresh_token = 'YOU_REFRESH_TOKEN'
+unique_ids = ['YOUR_NODE_UNIQUE_ID'] # 有 node 的情况
+update_timestamp = ''
+
+[[accounts]]
+access_token = 'YOU_ACCESS_TOKEN'
+email = 'email2.com'
+refresh_token = 'YOU_REFRESH_TOKEN'
+unique_ids = '' # 没有 node 的情况
+update_timestamp = ''
+
+
+[global]
+base_url = 'https://api.meshchain.ai/meshmain' # 项目方请求地址。写死
+request_interval = 30 # 每次循环间隔 30s 可以修改
