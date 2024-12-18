@@ -81,3 +81,18 @@ request_interval = 60 # 每次循环间隔 60s 可以修改
     ./main
    ```
 ---
+
+
+### 构建和运行 Docker 容器
+
+在项目根目录下运行以下命令构建 Docker 镜像：
+
+```bash
+docker build -t meshchain-tool .
+```
+
+然后运行容器：
+
+```bash
+docker run -d --name meshchain -v /path/to/your/config.toml:/app/config.toml meshchain-tool
+```
